@@ -4,16 +4,14 @@ on: push
 
 jobs:
     job1:
-        name: First job
-	runs-on: ubuntu-latest
-	steps:
-	-name: Step one
-	-uses: actions/checkout@v3
-	-name: Step two
-	 runs: env | sort
-	
+        name: First Job
+        runs-on: ubuntu-latest
+        steps:
+            - name: Step one
+            - name: Step two
     job2:
-        name: Second job
-	runs-on: ubuntu-latest	
-	-name: Step one
-	-uses: actions/checkout@v3
+        name: Second Job
+        runs-on: windows-latest
+        steps:
+            - name: Step one
+            - name: Step two
